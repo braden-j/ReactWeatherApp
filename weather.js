@@ -1,3 +1,5 @@
+const weather = document.getElementById("weather");
+
 function WeatherInfo({ location, date, currentTemp, feelsLike }) {
   return (
     <div className="weather-info">
@@ -145,5 +147,5 @@ function WeatherApp() {
   );
 }
 
-const root = ReactDOM.createRoot(document.getElementById("weather-app"));
+const root = ReactDOM.createRoot(document.getElementById("weather"));
 root.render(<WeatherApp />);
